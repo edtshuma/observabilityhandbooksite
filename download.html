@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Download Free Sample Chapter | The Observability Handbook</title>
+    <meta
+      name="description"
+      content="Download your free sample chapter and optionally subscribe to The Observability Handbook newsletter."
+    />
+    <style>
+      :root {
+        --bg: #081018;
+        --bg-soft: #0c1623;
+        --text: #f8f8f8;
+        --muted: #b9c3ce;
+        --accent: #00d8b0;
+        --border: #1b2937;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Inter, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        background: radial-gradient(circle at 80% 0, #112338, var(--bg) 35%);
+        color: var(--text);
+      }
+
+      .container {
+        width: min(920px, 92vw);
+        margin: 0 auto;
+        padding: 3.5rem 0 4rem;
+      }
+
+      .card {
+        background: rgba(9, 18, 29, 0.86);
+        border: 1px solid var(--border);
+        border-radius: 0.9rem;
+        padding: 1.35rem;
+        margin-bottom: 1rem;
+      }
+
+      h1,
+      h2 {
+        margin: 0 0 0.75rem;
+        line-height: 1.2;
+      }
+
+      p {
+        color: var(--muted);
+        margin: 0 0 0.9rem;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.5rem;
+        border: 1px solid transparent;
+        font-weight: 700;
+        cursor: pointer;
+        text-decoration: none;
+        padding: 0.78rem 1.1rem;
+      }
+
+      .btn-primary {
+        background: var(--accent);
+        color: #07121d;
+      }
+
+      .btn-secondary {
+        background: #0f1d2e;
+        color: var(--text);
+        border-color: #254056;
+      }
+
+      .top-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .pill {
+        border: 1px solid #245064;
+        color: var(--accent);
+        border-radius: 999px;
+        padding: 0.24rem 0.7rem;
+        font-size: 0.8rem;
+      }
+
+      .consent-row {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.6rem;
+        margin: 0.8rem 0;
+      }
+
+      .consent-row input {
+        margin-top: 0.18rem;
+      }
+
+      .consent-row label {
+        color: var(--muted);
+      }
+
+      .note {
+        font-size: 0.83rem;
+        color: #98a9ba;
+      }
+
+      .note a {
+        color: var(--accent);
+      }
+
+      .cta-row {
+        display: flex;
+        gap: 0.65rem;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+      }
+
+      .footer-link {
+        display: inline-block;
+        margin-top: 0.5rem;
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      @media (max-width: 720px) {
+        .container {
+          padding-top: 2.4rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <section class="card">
+        <div class="top-row">
+          <span class="pill">FREE SAMPLE</span>
+          <a class="btn btn-secondary" href="./index.html">Back to landing page</a>
+        </div>
+        <h1>Your sample chapter is ready</h1>
+        <p>
+          Thanks for requesting a preview of The Observability Handbook. Download Chapter 1
+          instantly below.
+        </p>
+        <a class="btn btn-primary" href="./sample-chapter-1.pdf" download
+          >Download Free Sample Chapter</a
+        >
+        <p class="note">
+          Replace <code>sample-chapter-1.pdf</code> with your actual file when ready.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Optional: also subscribe me</h2>
+        <p>
+          If you want updates on new chapters, launch timing, and observability lessons, you can
+          subscribe to The Observability Handbook newsletter.
+        </p>
+
+        <form action="#" method="post" id="newsletter-form">
+          <div class="consent-row">
+            <input id="consent" name="consent" type="checkbox" />
+            <label for="consent">
+              Yes, also subscribe me to The Observability Handbook newsletter. I understand I can
+              unsubscribe at any time.
+            </label>
+          </div>
+          <div class="cta-row">
+            <button id="subscribe-btn" class="btn btn-primary" type="submit" disabled>
+              Subscribe to newsletter
+            </button>
+          </div>
+        </form>
+
+        <p class="note">
+          This button is a placeholder. You will paste your Substack subscribe code here later.
+          By subscribing, users agree to your <a href="#" target="_blank">Privacy Policy</a> and
+          <a href="#" target="_blank">Terms</a>.
+        </p>
+      </section>
+
+      <a class="footer-link" href="./index.html">Return to home</a>
+    </main>
+
+    <script>
+      const consent = document.getElementById("consent");
+      const subscribeBtn = document.getElementById("subscribe-btn");
+      if (consent && subscribeBtn) {
+        consent.addEventListener("change", () => {
+          subscribeBtn.disabled = !consent.checked;
+        });
+      }
+    </script>
+  </body>
+</html>

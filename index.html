@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Observability Handbook</title>
+    <meta
+      name="description"
+      content="Practical ways to build and run a production-grade observability platform."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#top">The Observability Handbook</a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#who">Who it's for</a>
+          <a href="#outcomes">What you'll learn</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <a class="btn btn-primary" href="#cta">Get Free Sample Chapter</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="section hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">OBSERVABILITY ENGINEERING</p>
+            <h1>
+              Build a production-grade
+              <span class="accent">observability</span> platform from scratch.
+            </h1>
+            <p class="lead">
+              Tired of scattered logs, noisy alerts, and slow root-cause hunts? 
+              Build a production-ready observability operating system in months, <strong class="accent">not years</strong>.
+            </p>
+            <div class="hero-actions">
+              <form
+                class="hero-form"
+                action="./download.html"
+                method="get"
+              >
+                <label for="hero-email" class="sr-only">Email address</label>
+                <input
+                  id="hero-email"
+                  name="email"
+                  type="email"
+                  placeholder="Enter your email"
+                  autocomplete="email"
+                  required
+                />
+                <button type="submit" class="btn btn-primary btn-lg">Get Free Sample Chapter</button>
+              </form>
+              <p class="micro-proof">By downloading the sample chapter, you automatically join the waitlist and will be notified when the full copy is available.</p>
+            </div>
+          </div>
+
+          <aside class="book-panel" aria-label="Book preview">
+            <div class="cover-hero" role="img" aria-label="The Observability HandBook cover">
+              <div class="cover-arc"></div>
+              <div class="cover-arc cover-arc-2"></div>
+              <div class="cover-arc cover-arc-3"></div>
+
+              <div class="cover-dot-grid">
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+
+              <div class="cover-accent-bar"></div>
+              <p class="cover-top-label">OBSERVABILITY ENGINEERING</p>
+
+              <div class="cover-content">
+                <p class="cover-title-the">The</p>
+                <p class="cover-title-main">Observa<span>bility</span></p>
+                <p class="cover-title-sub">HandBook</p>
+                <div class="cover-divider"></div>
+                <p class="cover-subtitle">Design a production-grade observability platform</p>
+              </div>
+
+              <svg
+                class="cover-waveform"
+                viewBox="0 0 800 80"
+                preserveAspectRatio="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <polyline
+                  fill="none"
+                  stroke="rgba(0,168,130,0.2)"
+                  stroke-width="1"
+                  points="0,50 30,50 40,20 55,65 70,30 90,55 110,45 130,58 145,25 165,60 185,40 210,55 235,35 255,50 280,28 300,55 315,42 335,58 355,30 375,52 400,40 420,56 440,22 460,58 480,38 510,54 540,46 560,52 580,35 600,50 620,44 640,52 680,50 700,44 720,56 750,38 780,52 800,50"
+                />
+                <polyline
+                  fill="none"
+                  stroke="rgba(0,168,130,0.09)"
+                  stroke-width="0.5"
+                  points="0,55 40,55 55,38 75,62 95,42 120,58 150,30 170,55 200,48 230,60 260,35 290,52 320,40 350,56 380,28 410,54 440,38 470,58 500,44 530,52 560,38 590,54 620,46 650,50 680,50 710,44 740,52 780,46 800,50"
+                />
+              </svg>
+
+              <div class="cover-chapter-marks">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+
+              <div class="cover-bottom-band">
+                <p class="cover-author-name">Vusi E. Tshuma</p>
+                <p class="cover-edition-mark">FIRST EDITION<br />2026</p>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section-contrast">
+        <div class="container narrow">
+          <h2>Does this feel familiar?</h2>
+          <ul class="pain-list">
+            <li>Do you jump between 4+ tools just to understand one incident?</li>
+            <li>Are your alerts waking people up for non-issues?</li>
+            <li>Have you spent 30 minutes collecting context before fixing anything?</li>
+          </ul>
+          <p>
+            You are not failing. Most teams are running observability as disconnected tools, not an
+            integrated practice.
+          </p>
+          <p>
+            You do not need more dashboards. You need a practical handbook to design, operate, and
+            improve your stack in production.
+          </p>
+        </div>
+      </section>
+
+      <section id="why" class="section">
+        <div class="container two-col">
+          <div>
+            <h2>Why I wrote this book</h2>
+            <p>
+              My goal is simple: make practical observability knowledge available to everyone who
+              runs software in production.
+            </p>
+            <p>
+              Observability tooling is powerful, but many teams still struggle to extract real
+              value. This handbook closes that gap with field-tested patterns you can apply
+              immediately.
+            </p>
+            <div class="author-story">
+              <div class="author-avatar-frame">
+                <img src="./REC1.png" alt="Vusi portrait" />
+              </div>
+              <p class="author-greeting">Hey, it's Vusi 👋</p>
+              <p>
+                I write about building and scaling observability systems, and I have helped small
+                and large enterprises design and run an observability practice.
+              </p>
+              <p>
+                Over the years, I kept seeing the same blockers: disconnected ownership, noisy
+                telemetry, spiralling costs, and weak operating habits that make
+                observability unsustainable.
+              </p>
+              <p>
+                Two industry threads recently captured how serious this has become in modern
+                enterprises. See the two threads <a class="inline-link" href="./observability-threads.html">here</a>.
+              </p>
+              <ol class="author-reasons">
+                <li>
+                  <strong>Share practical patterns</strong> teams can use immediately in production.
+                </li>
+                <li>
+                  <strong>Prevent costly mistakes</strong> in architecture, operations, and incident response.
+                </li>
+                <li>
+                  <strong>Build sustainable practice</strong> so observability delivers long-term business value.
+                </li>
+              </ol>
+            </div>
+          </div>
+          <div class="callout callout-image-panel">
+            <div class="thread-slideshow" data-slideshow>
+              <img
+                class="callout-image is-active"
+                src="/Users/edtshuma/.cursor/projects/Users-edtshuma-Documents-PROJECTS/assets/Screenshot_2026-06-12_at_15.35.38-23b985a2-b394-44b7-b9a2-f43465f9b896.png"
+                alt="Reddit thread discussing practical observability pain points in 2025"
+              />
+              <img
+                class="callout-image"
+                src="/Users/edtshuma/.cursor/projects/Users-edtshuma-Documents-PROJECTS/assets/Screenshot_2026-06-12_at_15.40.49-fb7984e7-a878-4349-92fe-f5cee10e9ed7.png"
+                alt="Email thread asking how teams actually run systems in production"
+              />
+              <div class="slideshow-controls">
+                <button type="button" class="slide-btn" data-slide-dir="prev" aria-label="Previous thread">
+                  Prev
+                </button>
+                <button type="button" class="slide-btn" data-slide-dir="next" aria-label="Next thread">
+                  Next
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="who" class="section section-contrast">
+        <div class="container">
+          <h2>Who this book is for</h2>
+          <p class="lead-small">
+            If you support software in production, this book is for you. No prior observability
+            expertise required.
+          </p>
+          <div class="chip-grid">
+            <span>DevOps Engineers</span>
+            <span>Site Reliability Engineers</span>
+            <span>Sysadmins</span>
+            <span>Operations Engineers</span>
+            <span>Infrastructure Engineers</span>
+            <span>Full-stack Developers</span>
+            <span>Engineering Managers</span>
+            <span>CTOs</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="outcomes" class="section">
+        <div class="container">
+          <h2>What you'll be able to answer</h2>
+          <div class="grid-cards">
+            <article>What is observability and why should you care?</article>
+            <article>How do you collect the right telemetry signals?</article>
+            <article>How do you implement metamonitoring for your stack?</article>
+            <article>When should you use OSS vs vendor tools?</article>
+            <article>How do you control observability costs?</article>
+            <article>How do you correlate logs with metrics and traces?</article>
+            <article>How do you design your stack for production?</article>
+            <article>How do you build incident programs that win the day?</article>
+            <article>How do SLIs and SLOs drive reliability decisions?</article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-contrast">
+        <div class="container">
+          <h2>What's inside</h2>
+          <div class="three-col">
+            <article>
+              <h3>Day 0 Operations</h3>
+              <p>Design foundations, architecture choices, and implementation roadmap planning.</p>
+            </article>
+            <article>
+              <h3>Day 1 Operations</h3>
+              <p>Shipping instrumentation, dashboards, alerting, and team workflows in production.</p>
+            </article>
+            <article>
+              <h3>Day 2 Operations</h3>
+              <p>Scale, governance, incident improvement loops, and long-term operational maturity.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2>Early proof</h2>
+          <p class="lead-small">
+            Replace these placeholders with launch testimonials from early readers and practitioners.
+          </p>
+          <div class="three-col">
+            <blockquote>"Finally a practical view of observability in production."</blockquote>
+            <blockquote>"Clear guidance on logs, metrics, traces, and cost trade-offs."</blockquote>
+            <blockquote>"A handbook that translates theory into day-to-day operations."</blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="section section-contrast">
+        <div class="container">
+          <h2>Pricing</h2>
+          <p class="lead-small pricing-subtitle">
+            Save months of trial-and-error, ship faster in production, and avoid costly observability mistakes.
+          </p>
+          <p class="pricing-offer">$20 off for the first 2000 customers (<strong>xx left</strong>)</p>
+          <div class="pricing-grid">
+            <article class="price-card">
+              <p class="tier-label">Starter</p>          
+              <p class="price">
+                <span class="price-original">$69</span>
+                <span class="price-discount">$49</span>
+              </p>
+              <h4>The Book</h4>
+              <ul>
+                <li>The Observability Handbook in PDF and EPUB format</li>
+                <li>Core observability concepts and practical guidance</li>
+                <li>High-quality infographics and cheat sheets</li>
+              </ul>
+              <a class="btn btn-primary" href="#cta">Get Free Sample Chapter</a>
+            </article>
+            <article class="price-card featured">
+              <p class="tier-label">Max</p>
+              <!-- <h3></h3> -->
+              <p class="price">
+                <span class="price-original">$169</span>
+                <span class="price-discount">$149</span>
+              </p>
+              <h4>Real-World Project and Book</h4>
+              <!-- <p class="price-note">Real-World Project and Book</p> -->
+              <ul>
+                <li>Everything in Starter</li>
+                <li>Full source code for the real-world project</li>
+                <li>Step-by-step project deployment walkthrough</li>
+              </ul>
+              <a class="btn btn-primary" href="#cta">Get Free Sample Chapter</a>
+            </article>
+            <article class="price-card">
+              <p class="tier-label">Pro-Max</p>
+             
+              <p class="price">
+                <span class="price-original">$269</span>
+                <span class="price-discount">$249</span>
+              </p>
+              <h4>Video Course, Code and Book</h4>
+              <ul>
+                <li>Everything in Max</li>
+                <li>6+ hours of chapter-by-chapter video walkthroughs</li>
+                <li>Production-ready examples with expert insights</li>
+              </ul>
+              <a class="btn btn-primary" href="#cta">Get Free Sample Chapter</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section">
+        <div class="container narrow">
+          <h2>FAQ</h2>
+          <details>
+            <summary>Is this book beginner-friendly?</summary>
+            <p>
+              Yes. Basic familiarity with programming, command line usage, and server software is
+              enough.
+            </p>
+          </details>
+          <details>
+            <summary>Is this only for Grafana and Loki users?</summary>
+            <p>
+              No. The practices apply broadly, with specific examples anchored in practical modern
+              stacks.
+            </p>
+          </details>
+          <details>
+            <summary>Will this help with incident response and SLOs?</summary>
+            <p>
+              Yes. Incident design and SLI/SLO application are core parts of the handbook outcomes.
+            </p>
+          </details>
+          <details>
+            <summary>Is it practical or theoretical?</summary>
+            <p>
+              Practical first. The focus is on decisions, trade-offs, and operating patterns you can
+              use in production.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section id="cta" class="section section-contrast final-cta">
+        <div class="container narrow">
+          <h2>Build observability that works in production.</h2>
+          <p>Get your free sample chapter now.</p>
+          <form class="cta-form" action="./download.html" method="get">
+            <label for="email" class="sr-only">Email address</label>
+            <input id="email" name="email" type="email" placeholder="you@company.com" autocomplete="email" required />
+            <button type="submit" class="btn btn-primary">Get Free Sample Chapter</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>Run systems with confidence, not guesswork.</p>
+        <p>© <span id="year"></span> The Observability Handbook</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

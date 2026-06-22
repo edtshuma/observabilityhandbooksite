@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Observability Threads | The Observability Handbook</title>
+    <style>
+      :root {
+        --bg: #081018;
+        --bg-soft: #0c1623;
+        --text: #f8f8f8;
+        --muted: #b9c3ce;
+        --accent: #00d8b0;
+        --border: #1b2937;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Inter, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+      }
+
+      .container {
+        width: min(1080px, 92vw);
+        margin: 0 auto;
+        padding: 2.5rem 0 3.2rem;
+      }
+
+      h1 {
+        margin: 0 0 0.7rem;
+      }
+
+      p {
+        color: var(--muted);
+      }
+
+      .back-link {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      .threads-grid {
+        display: grid;
+        gap: 1rem;
+        margin-top: 1.4rem;
+      }
+
+      figure {
+        margin: 0;
+        background: var(--bg-soft);
+        border: 1px solid var(--border);
+        border-radius: 0.8rem;
+        overflow: hidden;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      figcaption {
+        color: var(--muted);
+        padding: 0.75rem 0.9rem 0.95rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <a class="back-link" href="./index.html">← Back to landing page</a>
+      <h1>Threads that reinforced this book's mission</h1>
+      <p>
+        These two discussions reflect recurring observability pain in production environments: noisy
+        alerts, fragmented tooling, and difficult root-cause workflows.
+      </p>
+
+      <section class="threads-grid">
+        <figure>
+          <img
+            src="/Users/edtshuma/.cursor/projects/Users-edtshuma-Documents-PROJECTS/assets/Screenshot_2026-06-12_at_15.35.38-23b985a2-b394-44b7-b9a2-f43465f9b896.png"
+            alt="Reddit thread discussing practical observability pain points in 2025"
+          />
+          <figcaption>
+            Thread 1: A practitioner discussion on tool sprawl, alert fatigue, and debugging delays.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="/Users/edtshuma/.cursor/projects/Users-edtshuma-Documents-PROJECTS/assets/Screenshot_2026-06-12_at_15.40.49-d6b9831a-452b-4882-b409-ae27820542e8.png"
+            alt="Email thread asking how teams actually run observability in production"
+          />
+          <figcaption>
+            Thread 2: A direct request for real-world operating practices beyond dashboard demos.
+          </figcaption>
+        </figure>
+      </section>
+    </main>
+  </body>
+</html>
