@@ -21,9 +21,10 @@
       <div class="container nav-wrap">
         <a class="brand" href="#top">The Observability Handbook</a>
         <nav class="site-nav" aria-label="Primary">
-          <a href="#who">Who it's for</a>
-          <a href="#outcomes">What you'll learn</a>
           <a href="#pricing">Pricing</a>
+          <a href="#contents">Contents</a>
+          <a href="#project">Project</a>
+          
           <a href="#faq">FAQ</a>
         </nav>
         <a class="btn btn-primary" href="#cta">Get Free Sample Chapter</a>
@@ -142,36 +143,62 @@
         </div>
       </section>
 
+      <section id="contents" class="section">
+        <div class="container narrow">
+          <h2>What's inside</h2>
+          <p class="lead-small">
+            A practical path from observability fundamentals to production rollout, operations, and
+            continuous improvement.
+          </p>
+          <div class="toc-card">
+            <p class="toc-part">Part I: Fundamentals of Observability</p>
+            <ul class="toc-list">
+              <li><span>The Big Picture: What Is Observability?</span><span>14</span></li>
+              <li><span>Why Observability Is Strategic</span><span>14</span></li>
+              <li><span>Observability vs Monitoring and Analytics</span><span>14</span></li>
+              <li><span>Metrics, Logs, Traces, Profiles, and Wide Events</span><span>14</span></li>
+              <li><span>Cardinality, Dashboards, Alerts, Incidents, SLOs and SLIs</span><span>14</span></li>
+              <li><span>Open Source, Enterprise, and AI-powered Tooling Landscape</span><span>14</span></li>
+            </ul>
+
+            <p class="toc-part">Part II: Day Zero Operations</p>
+            <ul class="toc-list">
+              <li><span>Framework for a Production-Grade Observability Stack</span><span>14</span></li>
+              <li><span>Start from Business-Critical Journeys</span><span>14</span></li>
+              <li><span>Map Services, Dependencies, and Environment Topology</span><span>14</span></li>
+              <li><span>Skills Audit, Budget Planning, and Data Policies</span><span>14</span></li>
+              <li><span>Tool Selection, Ownership, and Implementation Roadmap</span><span>14</span></li>
+            </ul>
+
+            <p class="toc-part">Introduction and Preface</p>
+            <ul class="toc-list">
+              <li><span>Who This Book Is For (and Not For)</span><span>2</span></li>
+              <li><span>Conventions, Versions, and Running Recipes</span><span>3</span></li>
+              <li><span>What You Will Learn and Why This Book Exists</span><span>4</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <section id="why" class="section">
-        <div class="container two-col">
+        <div class="container narrow">
           <div>
             <h2>Why I wrote this book</h2>
-            <p>
-              My goal is simple: make practical observability knowledge available to everyone who
-              runs software in production.
-            </p>
-            <p>
-              Observability tooling is powerful, but many teams still struggle to extract real
-              value. This handbook closes that gap with field-tested patterns you can apply
-              immediately.
-            </p>
             <div class="author-story">
               <div class="author-avatar-frame">
                 <img src="./REC1.png" alt="Vusi portrait" />
               </div>
               <p class="author-greeting">Hey, it's Vusi 👋</p>
               <p>
-                I write about building and scaling observability systems, and I have helped small
-                and large enterprises design and run an observability practice.
-              </p>
-              <p>
-                Over the years, I kept seeing the same blockers: disconnected ownership, noisy
+                Over the years, I have kept seeing the same blockers: disconnected ownership, noisy
                 telemetry, spiralling costs, and weak operating habits that make
                 observability unsustainable.
               </p>
+              <br />
               <p>
                 Two industry threads recently captured how serious this has become in modern
-                enterprises. See the two threads <a class="inline-link" href="./observability-threads.html">here</a>.
+                enterprises. See the two threads <a class="inline-link" href="./observability-threads.html">here</a>...
+                So I wrote this book for 3 reasons:
               </p>
               <ol class="author-reasons">
                 <li>
@@ -186,83 +213,36 @@
               </ol>
             </div>
           </div>
-          <div class="callout callout-image-panel">
-            <div class="thread-slideshow" data-slideshow>
-              <img
-                class="callout-image is-active"
-                src="/Users/edtshuma/.cursor/projects/Users-edtshuma-Documents-PROJECTS/assets/Screenshot_2026-06-12_at_15.35.38-23b985a2-b394-44b7-b9a2-f43465f9b896.png"
-                alt="Reddit thread discussing practical observability pain points in 2025"
-              />
-              <img
-                class="callout-image"
-                src="/Users/edtshuma/.cursor/projects/Users-edtshuma-Documents-PROJECTS/assets/Screenshot_2026-06-12_at_15.40.49-fb7984e7-a878-4349-92fe-f5cee10e9ed7.png"
-                alt="Email thread asking how teams actually run systems in production"
-              />
-              <div class="slideshow-controls">
-                <button type="button" class="slide-btn" data-slide-dir="prev" aria-label="Previous thread">
-                  Prev
-                </button>
-                <button type="button" class="slide-btn" data-slide-dir="next" aria-label="Next thread">
-                  Next
-                </button>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
-      <section id="who" class="section section-contrast">
+      <section id="project" class="section section-contrast">
         <div class="container">
-          <h2>Who this book is for</h2>
+          <h2>Real-World Observability Project</h2>
           <p class="lead-small">
-            If you support software in production, this book is for you. No prior observability
-            expertise required.
+            Build a production-style stack, from a modest ~50M metrics/sec system up to extreme hyperscale at 500M metrics/sec.
           </p>
-          <div class="chip-grid">
-            <span>DevOps Engineers</span>
-            <span>Site Reliability Engineers</span>
-            <span>Sysadmins</span>
-            <span>Operations Engineers</span>
-            <span>Infrastructure Engineers</span>
-            <span>Full-stack Developers</span>
-            <span>Engineering Managers</span>
-            <span>CTOs</span>
-          </div>
-        </div>
-      </section>
-
-      <section id="outcomes" class="section">
-        <div class="container">
-          <h2>What you'll be able to answer</h2>
-          <div class="grid-cards">
-            <article>What is observability and why should you care?</article>
-            <article>How do you collect the right telemetry signals?</article>
-            <article>How do you implement metamonitoring for your stack?</article>
-            <article>When should you use OSS vs vendor tools?</article>
-            <article>How do you control observability costs?</article>
-            <article>How do you correlate logs with metrics and traces?</article>
-            <article>How do you design your stack for production?</article>
-            <article>How do you build incident programs that win the day?</article>
-            <article>How do SLIs and SLOs drive reliability decisions?</article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-contrast">
-        <div class="container">
-          <h2>What's inside</h2>
-          <div class="three-col">
+          <div class="project-grid">
             <article>
-              <h3>Day 0 Operations</h3>
-              <p>Design foundations, architecture choices, and implementation roadmap planning.</p>
+              <h3>End-to-end implementation</h3>
+              <p>
+                Go from architecture to rollout with guided steps for logs, metrics, traces, profiles, dashboards, incidents,
+                and AI-assisted workflows.
+              </p>
             </article>
             <article>
-              <h3>Day 1 Operations</h3>
-              <p>Shipping instrumentation, dashboards, alerting, and team workflows in production.</p>
+              <h3>Production context</h3>
+              <p>
+                Learn practical trade-offs around cardinality, retention, cost, ownership, and
+                signal quality in real teams.
+              </p>
             </article>
             <article>
-              <h3>Day 2 Operations</h3>
-              <p>Scale, governance, incident improvement loops, and long-term operational maturity.</p>
+              <h3>Code and walkthroughs</h3>
+              <p>
+                Use reusable project code and walkthrough content to accelerate onboarding and reduce
+                trial-and-error.
+              </p>
             </article>
           </div>
         </div>
@@ -367,6 +347,68 @@
             <p>
               Practical first. The focus is on decisions, trade-offs, and operating patterns you can
               use in production.
+            </p>
+          </details>
+          <details>
+            <summary>What is the content of this book?</summary>
+            <p>
+              The Observability Handbook is a practical guide for building and operating observability
+              in production. It covers foundations, stack design, telemetry strategy, alerting,
+              incident response, SLI/SLO usage, cost control, governance, and operating models across
+              Day 0, Day 1, and Day 2 operations.
+            </p>
+          </details>
+          <details>
+            <summary>What if I don't like the book?</summary>
+            <p>
+              Start with the free sample chapter first to make sure the style fits what you need. If
+              the full book still does not meet expectations, reach out and we will review your case
+              and work toward a fair resolution.
+            </p>
+          </details>
+          <details>
+            <summary>Do you offer team discounts?</summary>
+            <p>
+              Yes. Team licenses are available for companies that want multiple copies for engineering
+              teams, platform teams, or reliability programs. Contact us with your team size and we
+              will share a custom offer.
+            </p>
+          </details>
+          <details>
+            <summary>I'm a student, can I get a discount?</summary>
+            <p>
+              Yes. Student discounts are available in limited slots. Share a valid student email or
+              proof of enrollment and we will send you the current student pricing options.
+            </p>
+          </details>
+          <details>
+            <summary>Is this a physical book?</summary>
+            <p>
+              Not at the moment. The book is currently digital-only (PDF and EPUB), with video and
+              project code access included depending on the tier you choose.
+            </p>
+          </details>
+          <details>
+            <summary>I have more questions!</summary>
+            <p>
+              Great. Use the free sample chapter form and include your question, or reply from your
+              confirmation email. We are happy to help with content, tier selection, and team
+              purchasing questions.
+            </p>
+          </details>
+          <details>
+            <summary>Do you offer Power Purchasing Parity discounts (PPP)?</summary>
+            <p>
+              Yes. We offer PPP discounts for eligible countries to make the handbook more accessible.
+              If this applies to you, contact us and we will guide you through the eligibility check.
+            </p>
+          </details>
+          <details>
+            <summary>Isn't all of that available in blogs across the internet?</summary>
+            <p>
+              Some pieces are, but they are often scattered, outdated, or disconnected from real
+              production decisions. This handbook gives you a structured, opinionated path with
+              practical trade-offs, reference architectures, and end-to-end implementation guidance.
             </p>
           </details>
         </div>
